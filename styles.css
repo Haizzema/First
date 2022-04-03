@@ -1,0 +1,130 @@
+﻿:root{
+        --black-bkg: black;
+        --pink-bkg: pink;
+        --blue-color: red;
+        --sales-bkg: rgb(209, 205, 205);
+    }
+
+/* подключение шрифтов */
+body{
+   font-family: 'Lato', sans-serif;
+   font-size: 14px;
+   line-height: 17px; 
+   font-style: normal;
+   font-weight: 400;
+}
+
+.header {
+    background-color: var(--black-bkg);
+    border: 10px solid color red;
+    /*    rgba(0, 153, 153, 0.122); */
+}
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header__menu-list{
+    display: flex;
+    align-items: center;
+}
+
+.header__menu{
+    border: 10px solid color red;
+    background-color: transparent;
+    margin: 5px 5px 5px 5px;
+}
+
+.header__wrp{
+    display: flex;
+    min-height: 50px;
+    justify-content: space-between;
+    margin: 0 41px 0 0;
+}
+
+.header__link{
+    margin: 0 0 0 33px;
+}
+
+.header__logo{
+    margin: 0 41px 0 33px;
+}
+
+.brand{
+    display: flex;
+}
+
+.brand__title-wrp{
+    flex-grow: 1;
+    background-color: var(--pink-bkg);
+    padding: 0 0 0 92px;
+    display: flex;
+    align-items: center;
+}
+
+.brand__img{
+    width: 45%;
+    height: 500px;
+}
+
+.brand__title-lower{
+    font-weight: 100;
+    font-size: 15px;
+    line-height: 15px;
+    text-transform: uppercase;
+    display: block;
+}
+
+.brand__title{
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 28px;
+    text-transform: uppercase;
+}
+
+.blue{
+    color: var(--blue-color);
+}
+
+/* Стилизация SECTION  */
+.sales__list{
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.sales__item{
+    height: 260px;
+    width: 300px;
+    background-color: var(--sales-bkg);
+}
+
+.sales__size-img{
+    width: 100%;
+    height: 200px;
+}
+
+.sales__item--woman{
+    background-image: url(img/woman.jpeg);
+}
+
+.sales__item--shoes{
+    width: 100%;
+}
+
+.invisible{
+    visibility: hidden;
+}
+
+.sales__item4{
+    display: grid;
+    grid-template-columns: repeat(100,1fr);
+}
+
+.sales__size-img4{
+    grid-column-start: 50;
+    max-width: 1150px ;
+    max-height: 80%;
+    padding-top: 10px;    
+}
